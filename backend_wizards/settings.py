@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-izoj!ri4h)=@!8_q-yny6l5f5t))l=%-7(!$^=qy69p&=a_!y9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", ".pxxl.app,localhost,127.0.0.1,.pxxl.click").split(",")
 
 
 # Application definition
